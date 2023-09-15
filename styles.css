@@ -1,8 +1,118 @@
-/*
+.miss-your-keys-view {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	border: 1px solid hsla(0, 0%, 100%, 0.2);
+	height: fit-content;
+	overflow-wrap: break-word;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.miss-your-keys-view .metadata-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+	overflow-x: wrap;
+	height: 100%;
+	width: 100%;
+}
 
-If your plugin does not need CSS, delete this file.
+.miss-your-keys-view .row-container.tags {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
 
-*/
+.miss-your-keys-view .column-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+	height: 100%;
+}
+
+.miss-your-keys-view .column-container.editor {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 300%;
+	height: 100%;
+}
+
+.miss-your-keys-view .column-selector {
+	content: "Hello";
+	width: 100%;
+	height: 1rem;
+}
+
+.miss-your-keys-view .value-container,
+.miss-your-keys-view .key-container {
+	width: 100%;
+}
+
+.miss-your-keys-view .value-container:hover,
+.miss-your-keys-view .key-container:hover {
+	background-color: hsla(0, 0%, 100%, 0.2);
+	width: 100%;
+}
+
+.miss-your-keys-view .column-container.keys {
+	border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+	min-width: fit-content;
+}
+
+
+.miss-your-keys-view .row-item-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.miss-your-keys-view .row-item {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: var(--line-height);
+	padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+.miss-your-keys-view .row-item:hover {
+	background-color: hsla(0, 0%, 100%, 0.2);
+}
+	
+
+.miss-your-keys-view .column-container.values .row-item.missing {
+	background-color: hsla(0, 50%, 50%, 0.2);
+}
+
+.miss-your-keys-view .column-container.values .row-item.missing:hover {
+	background-color: hsla(0, 50%, 50%, 0.4);
+}
+
+.miss-your-keys-view .column-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.miss-your-keys-view .column-container .row-item {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 100%;
+}
+.miss-your-keys-view .value-container.invalid {
+	background-color: hsla(0, 50%, 50%, 0.2);
+}
+.miss-your-keys-view .column-container.editor {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.miss-your-keys-view .column-container.editor .miller-column {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
